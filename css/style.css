@@ -45,7 +45,7 @@ strong {
   font-weight: bold;
 }
 body {
-  color: #848484;
+  color: #333; /* Darker text color for better contrast */
   background: #e2e2e2;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -95,7 +95,7 @@ h1,
 h2,
 h4,
 h5 {
-  color: #444;
+  color: #222; /* Improved heading contrast */
 }
 h1 {
   font-size: 42px;
@@ -318,6 +318,10 @@ p {
   position: fixed;
 }
 .mdl-layout__header {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   right: 0;
@@ -329,6 +333,12 @@ p {
     0 1px 5px 0 rgba(0, 0, 0, 0.03);
   background: #fff;
 }
+.mdl-layout__header-row {
+  padding: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
 .mdl-layout__header .mdl-layout__header-row .mdl-navigation li {
   cursor: pointer;
 }
@@ -336,9 +346,11 @@ p {
   .mdl-layout__header-row
   .mdl-navigation
   .mdl-navigation__link {
+  padding: 0 15px;
+  font-size: 14px;
   color: #444;
   text-transform: capitalize;
-  padding: 0 15px;
+  transition: color 0.3s ease;
   position: relative;
   -moz-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -626,7 +638,7 @@ p {
 }
 
 .github-link:hover {
-  background-color: #0366d6; /* Lighter blue color */
+  background-color: #0056b3; /* More distinct hover color */
   transform: translateY(-1px); /* Slight lift effect */
 }
 
@@ -680,6 +692,10 @@ p {
 .contact-sec .social-icons li a.youtube-link i {
   background-color: #ff0002;
 }
+.mdl-menu {
+  top: 64px;
+  right: 20px;
+}
 @media (max-width: 1023px) {
   .mdl-layout--large-screen-only {
     display: none;
@@ -703,6 +719,17 @@ p {
   }
   .about-sec .info-wrap {
     text-align: center;
+    padding: 0 15px;
+  }
+  .mdl-card {
+    padding: 30px 15px;
+  }
+  .mdl-layout__header {
+    padding: 0 10px;
+  }
+  .mdl-navigation__link {
+    padding: 0 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 568px) {
@@ -726,6 +753,12 @@ p {
 @media (max-width: 414px) {
   h1 {
     font-size: 27px;
+  }
+  .mdl-layout__header {
+    padding: 10px 15px;
+  }
+  .mdl-layout__header .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+    padding: 0 10px;
   }
 }
 @media (max-width: 358px) {
