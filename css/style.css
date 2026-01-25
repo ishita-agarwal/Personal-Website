@@ -586,10 +586,13 @@ p {
 .about-sec .info-wrap .mdl-button {
   display: inline-block;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 8px 16px;
   font-size: 14px;
   width: auto;
+}
+.about-sec .profile-wrap {
+  margin-top: 15px;
 }
 .profile-sec .profile-icon {
   font-size: 60px;
